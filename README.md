@@ -7,11 +7,7 @@
 
 
 
- <div>
-    <h2 id="tech" style="font-weight: bold; font-size: 2rem">Tecnologia Utilizada</h2>
-    <img width="50" height="26" alt="C" src="https://img.shields.io/badge/C-4169E1?style=for-the-badge&logo=c&logoColor=white"/>
-  </div>
-
+ 
 
 
 ## Requisitos do projeto:
@@ -39,6 +35,13 @@ O sistema funciona como um gerenciador de pedidos de xerox, registrando informa�
 O sistema utiliza um arquivo texto para salvar e carregar os pedidos, garantindo que as informações sejam mantidas entre execuções do programa. A cada operação, o arquivo é atualizado automaticamente para refletir o estado atual dos pedidos.
 
 A implementação do sistema utiliza a linguagem C, para garantir que os pedidos sejam mantidos organizados e atualizados no arquivo, garantindo a integridade dos dados.
+
+
+<div>
+    <h2 id="tech" style="font-weight: bold; font-size: 2rem">Tecnologia Utilizada</h2>
+    <img width="50" height="26" alt="C" src="https://img.shields.io/badge/C-4169E1?style=for-the-badge&logo=c&logoColor=white"/>
+  </div>
+
 
 ## Como rodar na minha maquina?
 
