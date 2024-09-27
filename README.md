@@ -12,10 +12,10 @@
 
 ## Requisitos do projeto:
 
-✅A opção Sair é a única que permite sair do programa.
-✅A cada execução do seu programa, os dados devem ser armazenados em um arquivo txt e deve carregar os mesmos para o programa.
-✅Cada nova reserva cadastrada deve ser inserida em uma ordem cronológica.
-✅O arquivo deve refletir o estado atual dos dados em virtude da adição ou remoção.
+- A opção Sair é a única que permite sair do programa.
+- A cada execução do seu programa, os dados devem ser armazenados em um arquivo txt e deve carregar os mesmos para o programa.
+- Cada nova reserva cadastrada deve ser inserida em uma ordem cronológica.
+- O arquivo deve refletir o estado atual dos dados em virtude da adição ou remoção.
 
 
 
