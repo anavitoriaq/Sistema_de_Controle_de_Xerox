@@ -1,5 +1,4 @@
 # Sistema_de_Controle_de_Xerox
-Projeto destinado a 3ª unidade de Estrutura de dados.
 
 
 <div>
@@ -8,11 +7,38 @@ Projeto destinado a 3ª unidade de Estrutura de dados.
 
 
 
+ <div>
+    <h2 id="tech" style="font-weight: bold; font-size: 2rem">Tecnologia Utilizada</h2>
+    <img width="50" height="26" alt="C" src="https://img.shields.io/badge/C-4169E1?style=for-the-badge&logo=c&logoColor=white"/>
+  </div>
 
 
 
+## Requisitos do projeto:
+    ✅A opção Sair é a única que permite sair do programa.</br>
+    ✅A cada execução do seu programa, os dados devem ser armazenados em um arquivo txt e deve carregar os mesmos para o programa</br>
+    ✅Cada nova reserva cadastrada deve ser inserida em uma ordem cronológica.</br>
+    ✅O arquivo deve refletir o estado atual dos dados em virtude da adição ou remoção.
 
 
+
+## Sobre o Projeto:
+
+Este projeto tem como objetivo o desenvolvimento de um sistema de controle de xerox, capaz de gerenciar pedidos de cópias feitos por alunos, professores e funcionários permitindo registrar, consultar e controlar os pedidos e os custos envolvidos.
+
+## Como funciona:
+
+O sistema funciona como um gerenciador de pedidos de xerox, registrando informações como nome, tipo de solicitante (aluno, professor, funcionário), quantidade de páginas e o valor total do pedido. Cada pedido tem um status que pode ser "pendente", "concluído" ou "cancelado". O usuário interage com o sistema por meio de um menu, onde pode:
+
+   - Adicionar novos pedidos
+   - Excluir ou editar pedidos existentes
+   - Listar todos os pedidos ou filtrá-los por status
+   - Buscar pedidos pelo nome ou número do solicitante
+   - Consultar o total de cópias realizadas e o valor arrecadado.
+
+O sistema utiliza um arquivo texto para salvar e carregar os pedidos, garantindo que as informações sejam mantidas entre execuções do programa. A cada operação, o arquivo é atualizado automaticamente para refletir o estado atual dos pedidos.
+
+A implementação do sistema utiliza a linguagem C, para garantir que os pedidos sejam mantidos organizados e atualizados no arquivo, garantindo a integridade dos dados.
 
 ## Como rodar na minha maquina?
 
