@@ -22,7 +22,7 @@
 
 Este projeto tem como objetivo o desenvolvimento de um sistema de controle de xerox, capaz de gerenciar pedidos de cópias feitos por alunos, professores e funcionários permitindo registrar, consultar e controlar os pedidos e os custos envolvidos.
 
-## Como funciona:
+## Como funciona
 
 O sistema funciona como um gerenciador de pedidos de xerox, registrando informações como nome, tipo de solicitante (aluno, professor, funcionário), quantidade de páginas e o valor total do pedido. Cada pedido tem um status que pode ser "pendente", "concluído" ou "cancelado". O usuário interage com o sistema por meio de um menu, onde pode:
 
