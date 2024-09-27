@@ -9,7 +9,7 @@
 
 
 
-## Requisitos do projeto:
+## Requisitos do projeto
 
 - A opção Sair é a única que permite sair do programa.
 - A cada execução do seu programa, os dados devem ser armazenados em um arquivo txt e deve carregar os mesmos para o programa.
@@ -18,7 +18,7 @@
 
 
 
-## Sobre o Projeto:
+## Sobre o Projeto
 
 Este projeto tem como objetivo o desenvolvimento de um sistema de controle de xerox, capaz de gerenciar pedidos de cópias feitos por alunos, professores e funcionários permitindo registrar, consultar e controlar os pedidos e os custos envolvidos.
 
@@ -43,9 +43,9 @@ A implementação do sistema utiliza a linguagem C, para garantir que os pedidos
   </div>
 
 
-## Como rodar na minha maquina?
+## Como rodar na minha máquina?
 
-Primeiro Clone o repositorio na sua maquina:
+Primeiro Clone o repositório na sua máquina:
 
 ```bash
 git clone https://github.com/classroom-ufersa/Sistema_de_Controle_de_Xerox.git
