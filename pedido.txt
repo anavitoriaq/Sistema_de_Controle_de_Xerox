@@ -1,7 +1,19 @@
 
 ---------------------------
 Número: 01
-Nome do Solicitante: a
+Nome do Solicitante: ana
+Tipo de Solicitante: Aluno
+Quantidade de Páginas: 45
+Data do Pedido: 08/10/2024
+Valor Total: 9.00
+Status: Pendente
+
+
+---------------------------
+
+---------------------------
+Número: 02
+Nome do Solicitante: ds
 Tipo de Solicitante: Aluno
 Quantidade de Páginas: 23
 Data do Pedido: 08/10/2024
@@ -12,12 +24,24 @@ Status: Pendente
 ---------------------------
 
 ---------------------------
-Número: 02
-Nome do Solicitante: wr
-Tipo de Solicitante: Funcionário
-Quantidade de Páginas: 54
+Número: 03
+Nome do Solicitante: wad
+Tipo de Solicitante: Professor
+Quantidade de Páginas: 45
 Data do Pedido: 08/10/2024
-Valor Total: 9.72
+Valor Total: 9.00
+Status: Pendente
+
+
+---------------------------
+
+---------------------------
+Número: 04
+Nome do Solicitante: wds
+Tipo de Solicitante: Funcionário  
+Quantidade de Páginas: 4
+Data do Pedido: 08/10/2024
+Valor Total: 0.80
 Status: Pendente
 
 

@@ -415,7 +415,7 @@ void obterNovoStatus(char *status)
         printf(" 1. Pendente\n");
         printf(" 2. Concluído\n");
         printf(" 3. Cancelado\n");
-        printf(" Digite a opção (1-3): ");
+        printf(" -------- Digite a opção (1-3): --------");
         fgets(entrada, sizeof(entrada), stdin); // Captura a entrada
 
         if (entrada[0] == '\n')
