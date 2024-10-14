@@ -1,78 +1,73 @@
-#ifndef PEDIDO_H
-#define PEDIDO_H
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <time.h>
 
-#define MAX_NOME 50
-#define MAX_STATUS 50
-#define PRECO_POR_PAGINA 0.20
-typedef struct{
+#define PRECO_POR_PAGINA 0.10
+
+// Definição da struct de Pedido
+typedef struct Pedido{
     int numero;
-    char nomeSolicitante[MAX_NOME];
-    char tipoSolicitante[MAX_NOME]; // Aluno, Professor, Funcionario
+    char nomeSolicitante[50];
+    char tipoSolicitante[20];
     int quantidadePaginas;
-    char dataPedido[11]; // formato: dd/mm/yyyy
+    char dataPedido[11];
     float valorTotal;
-    char status[MAX_STATUS]; // Pendente, Concluído, Cancelado
+    char status[15];
+    struct Pedido * proximo;
 } Pedido;
-
-extern Pedido ** pedidos;
-extern int contador_pedidos;
-extern int capacidade;
-
-// Função para obter a data atual
-void obterData(char * data);
-
-// Função para redimensionar o array de pedidos
-void redimensionarPedidos();
-
-// Função para adicionar um pedido
-void adicionarPedido();
-
-// Função para listar todos os pedidos
-void listarPedidos();
-
-// Função para excluir um pedido
-void excluirPedido();
-
-// Função para buscar pedido por número ou nome
-void buscarPedido();
-
-// Função para editar um pedido
-void editarPedido();
-
-// Função para consultar pedidos por status
-void consultarPedidosPorStatus();
-
-// Função para calcular total de cópias realizadas e valor arrecadado
-void consultarTotalCopiasValor();
-
-// Função para liberar memória alocada para os pedidos
-void liberarMemoria();
-
-// Função para verificar se a string contém apenas números
-int apenasNumeros(const char *str);
-
-// Função para verificar se a string contém apenas letras
-int apenasLetras(const char *str); 
-
-// Função para verificar se a string contém pelo menos uma letra
-int possuiLetra(const char *str);
 
 // Função para capturar e validar a entrada
 int obterOpcaoMenu();
 
-// Função para obter o novo status do pedido
-void obterNovoStatus(char *status);
+// Função para obter a data atual dd/mm/yyyy
+void obterData(char *data); 
 
-// Função para obter tipo de solicitante como número
+// Função para verificar se a string contém apenas letras
+int apenasLetras(const char *str);
+
+// Função para verificar se a string contém apenas números
+int apenasNumeros(const char *str);
+
+// Função para obter uma entrada apenas com caracteres
+void obterEntradaApenasCaracteres(char *buffer, int tamanho, const char *prompt);
+
+// Função para obter o tipo de solicitante
 void obterTipoSolicitante(Pedido *pedido);
 
-// Função para obter entrada de string com validação
-void obterEntradaValida(char *buffer, int tamanho, const char *prompt);
+// Função para obter a quantidade de páginas
+void obterQuantidadePaginas(int *quantidade);
 
-// Função para carregar pedidos do arquivo
-void carregarPedidosDoArquivo();
+// Função para obter o novo status do pedido
+void Status(char *status);
 
 // Função para salvar pedidos no arquivo
-void salvarPedidosNoArquivo();
+void salvarPedidoNoArquivo(Pedido* lista, const char* nomeArquivo);
 
-#endif
+// Carrega os pedidos existentes do arquivo
+void carregarPedidosDoArquivo(Pedido** lista, const char* nomeArquivo);
+
+// Função para inserir um pedido na lista encadeada
+void inserirPedidoNaLista(Pedido** lista, Pedido* novoPedido);
+
+// Função para adicionar um pedido
+void adicionarPedido(Pedido** lista);
+
+// Função para listar os pedidos
+void exibirPedidos(Pedido *lista);
+
+// Função para excluir um pedido e atualizar os números
+void excluirPedido(Pedido** lista);
+
+// Função para editar um pedido 
+void editarPedido(Pedido *lista);
+
+// Função para buscar pedido por número ou nome
+void buscarPedido(Pedido * lista);
+
+// Função para consultar pedidos por status
+void consultarPedidoPorStatus(Pedido * lista);
+
+// Função para consultar total de copias realizadas e o valor arrecado 
+void consultarTotalCopiasValor(Pedido *lista);
